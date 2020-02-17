@@ -5,9 +5,9 @@ import PlayKitKava
 import PlayKitProviders
 
 // VOD
-fileprivate let SERVER_BASE_URL = "https://cdnapisec.kaltura.com"
-fileprivate let PARTNER_ID = 1424501
-fileprivate let ENTRY_ID = "1_djnefl4e"
+//fileprivate let SERVER_BASE_URL = "https://cdnapisec.kaltura.com"
+//fileprivate let PARTNER_ID = 1424501
+//fileprivate let ENTRY_ID = "1_djnefl4e"
 
 // Live DVR
 //fileprivate let SERVER_BASE_URL = "https://cdnapisec.kaltura.com"
@@ -15,9 +15,12 @@ fileprivate let ENTRY_ID = "1_djnefl4e"
 //fileprivate let ENTRY_ID = "1_fdv46dba"
 
 // Live
-//fileprivate let SERVER_BASE_URL = "http://qa-apache-php7.dev.kaltura.com/"
-//fileprivate let PARTNER_ID = 1091
-//fileprivate let ENTRY_ID = "0_f8re4ujs"
+fileprivate let SERVER_BASE_URL = "https://cdnapisec.kaltura.com"
+fileprivate let PARTNER_ID = 2488041
+fileprivate let ENTRY_ID = "1_5eavnwpq"
+fileprivate let KS = """
+djJ8MjQ4ODA0MXxQ-e1GzMDGwiFZiCsB9GjBXImcRxNOjaJI3XtAEM8rMuliuWiSId9s76au-I8aCo5ag7XW5Q0Ig2_Z0QOU_aEJGAZROQURceVdRTng2Lz0Xa2kkroeAZIC2QBqKVTkvuytLpQaClPi-TkVJtr5kUFipghZVgsk6if38AcRtYssZ5CXtdZB6bfeWGUFD-83lZExIZXXsaqg-DC7uyReyrgN
+"""
 
 class ViewController: UIViewController {
 
@@ -55,6 +58,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ks = KS
         
         self.state = .idle
         self.playPauseButton.isEnabled = false
